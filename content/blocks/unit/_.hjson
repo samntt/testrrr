@@ -1,0 +1,36 @@
+type: UnitFactory
+health: 5000
+size: 5
+plans: [
+  {
+  unit: "DarkSun"
+  requirements: [
+    silicon/3500
+    coal/750
+    surge-alloy/1000
+    titanium/2000
+    solar iron Alloy/200
+  ]
+  time: 1500
+  }
+  {
+  unit: "[blue]Flying domer"
+  requirements: [
+    silicon/3000
+    solar iron Alloy/1000
+    titanium/1000
+    surge-alloy/5000
+  ]
+  time: 2400
+  }
+]
+consumes: {
+power: 10
+}
+category: units
+
+researchCostMultiplier: 2.5
+requirements: [
+  silicon/6250
+  solar iron Alloy/1000
+]

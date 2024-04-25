@@ -1,0 +1,91 @@
+{
+         "type": "flying",
+	"speed": 1,
+	"rotate": true,
+	"name": "The [blue]Domer(flying)",
+	"outlineColor": "41445500",
+	"hitSize": 250,
+	"health": 230000,
+	"dammage": 200,
+	"size": 150,
+	"canDrown": "false",
+        "mineSpeed": 6000,
+        "buiThisldSpeed": 1,
+        "buildSpeed": 9999,
+	"canBuild": true,
+        "mineTier": 1000,
+        "itemCapacity": 5000,
+	"armor": 0,
+        "canBoost": false,
+        "hovering": true,
+        "flying": true,
+        "ground": true,
+        "shadowElevation": 5,
+        "useEngineElevation": true,
+	"targetAir": true,
+        "engineSize": 30,
+        "engineOffset": 150,
+        "trailColor": "a93e3eFF",
+        "trailLength": 100,
+        "engineColor": "a93e3eFF",
+	"rotateSpeed": 1,
+	"faceTarget": true,
+    "parts": [
+        ],
+	"immunities": [
+        "burning",
+	],
+	"weapons": [
+    {
+"name": "WTF",
+  "reload": 100000000000000,
+    "shootOnDeath": "true",
+    "killShooter": "true",
+    "mirror": "false",
+    "shootCone": 30,
+    "bullet": {
+      "type": "ExplosionBulletType",
+      "despawnShake": 10,
+      "hitShake": 10,
+      "splashDamage": 0,
+      "splashDamageRadius": 0,
+    "spawnUnit": "unity-kiros-[blue]Domer"
+    }
+  }
+    ],
+    "abilities": [
+    {    
+    "type": "SuppressionFieldAbility",
+    "orbRadius": 160,
+    "colorFrom": "a93e3e55",
+    "colorTo": "a93e3e44",    
+    "color": a93e3e44
+    },
+    {
+    "type": "SuppressionFieldAbility",
+    "orbRadius": 135,
+    "colorFrom": "a93e3e55",
+    "colorTo": "a93e3e44",    
+    "color": fbefef50
+    },
+    {
+    "type": "SuppressionFieldAbility",
+    "orbRadius": 80,
+    "colorFrom": "a93e3e55",
+    "colorTo": "a93e3e44",    
+    "color": ffffff50
+    },
+	    {
+	    "type": "EnergyFieldAbility",
+	    "maxTargets": 100,
+	    "range": 200,
+	     "colorFrom": "990000FF",
+             "colorTo": "bb0000FF",
+	     "color": "9900BBFF",
+	     "damage": 200,
+	     "reload": 10,
+        "color": a93e3e
+	    }
+        ]
+"description": "SHOOT TO UNFLY IF NO UNFLY IT CAN'T SHOOT BIG LASER [white]The most [blue]powerful[] and [yellow]strongest []of all the storm units. If you wish to live place indium walls and an extremely powerful defence. It destroys everything it goes over as well as barages with hyperLaser.",
+}

@@ -1,0 +1,12 @@
+type: CoreBlock
+health: 75000
+itemCapacity: 8000000
+size: 6
+unitType: omega
+unitCapModifier: 100
+requirements: [
+  copper/1
+] 
+category: effect
+research: core-foundation
+researchCostMultiplier: 0.25

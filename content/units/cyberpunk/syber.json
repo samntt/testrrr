@@ -1,0 +1,153 @@
+{
+         "type": "flying",
+	"speed": 3,
+	"rotate": true,
+	"name": "syber",
+	"outlineColor": "777778",
+	"hitSize": 25,
+	"health": 230,
+	"dammage": 200,
+	"size": 15,
+	"canDrown": "false",
+        "mineSpeed": 0,
+        "buiThisldSpeed": 1,
+        "buildSpeed": 0,
+	"canBuild": false,
+        "mineTier": 0,
+        "itemCapacity": 50,
+	"armor": 50,
+        "canBoost": false,
+        "hovering": true,
+        "flying": true,
+        "ground": true,
+        "shadowElevation": 2,
+        "useEngineElevation": true,
+	"targetAir": true,
+        "engineSize": 3,
+        "engineOffset": 5,
+	"rotateSpeed": 5,
+	"faceTarget": true,
+    "parts": [
+        ],
+	"immunities": [
+        "freezing",
+	],
+	"weapons": [
+    {
+      "name": "LOL",
+      "x": 0,
+  "y": 5,
+  "reload": 80,
+  "mirror": "false",
+  "ejectEffect": "none",
+  "range":100,
+  "shoot":{
+    "type": "basisBulletType"
+  }
+
+  "bullet": "standardHoming",
+  "bullet": {
+    "shootEffect": "instShoot",
+    "smokeEffect": "shootBigSmoke",
+    "instantDisappear": "true",
+    "damage": 0,
+    "spawnUnit": "unity-kiros-zero"
+    }
+    },
+{
+"name":"air",
+"x":7,
+      "y": 0,
+      "shake": 2,
+      "recoil": 6,
+      "reload": 180,
+      "alternate": true,
+      "shootSound": "largeCannon",
+      "mirror": true,
+      "rotate": false,
+      "top": false,
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "unity-kiros-lycosid-bullet",
+        "frontColor": "a93e3e",
+        "hitSound": "bang",
+        "hitShake": 2,
+        "hitEffect": "instHit",
+        "backColor": "6f2626",
+        "width": 18,
+        "height": 25,
+        "speed": 1.2,
+        "lifetime": 250,
+        "scaleLife": true,
+        "damage": 100,
+        "spin": 0,
+        "pierce": true,
+        "pierceBuilding": true,
+        "buildingDamageMultiplier": 0.75,
+        "lightning": 30,
+        "lightningColor": "a93e3e",
+        "lightningLength": 20,
+        "lightningDamage": 35,
+        "fragBullets": 10,
+        "fragBullet": {
+          "hitShake": 3,
+          "type": "ArtilleryBulletType",
+          "hitEffect": "hitMeltdown",
+          "hitSound": "explosion",
+          "sprite": "unity-kiros-lycosid-bullet",
+          "frontColor": "a93e3e",
+          "backColor": "6f2626",
+          "width": 15,
+          "height": 15,
+          "spin": 20,
+          "speed": 1,
+          "lifetime": 80,
+          "damage": 10,
+          "lightning": 3,
+          "lightningLength": 9,
+          "lightningDamage": 12,
+          "fragBullets": 5,
+          "fragBullet": {
+            "hitShake": 3,
+            "type": "BombBulletType",
+            "splashDamageRadius": 70,
+            "sprite": "unity-kiros-blackHole",
+            "hitSound": "explosion",
+            "width": 12,
+            "height": 12,
+            "hitEffect": {
+              "type": "WaveEffect",
+              "sizeFrom": 35,
+              "sizeTo": -100,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626"
+            },
+            "splashDamage": 30,
+            "speed": 0.5,
+            "lifetime": 100,
+            "fragBullets": 2,
+            "fragBullet": {
+              "hitShake": 1,
+              "type": "MissileBulletType",
+              "speed": 1.5,
+              "lifetime": 40,
+              "height": 16,
+              "width": 10,
+              "damage": 2,
+              "homingPower": 0.09,
+              "homingRange": 160,
+              "homingDelay": 60,
+              "hitEffect": "blastExplosion",
+              "lightning": 10, 
+              "lightningLength": 5,
+              "lightningDamage": 10
+            }
+          }
+        }
+      }
+    }
+    ]
+    "abilities": [
+        ]
+"description": "total useless.",
+}

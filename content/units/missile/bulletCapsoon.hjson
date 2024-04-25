@@ -1,0 +1,55 @@
+type: missile
+health: 1000000
+hitSize: 10
+template: MissileUnitType
+speed: 5
+engineSize: 1
+engineOffset: 4
+physics: true
+flying: true
+useUnitCap: false
+lifetime: 100
+rotateSpeed:0
+respawnHit: true
+
+trailLength: 200
+trailColor: ffff22ff
+aimDst: 4
+drawCell: false
+outlines: true
+range: 2
+hidden: false
+weapons: [
+{
+name: WTF
+  shootOnDeath: true
+  shootOnRespawn: true
+  killShooter: true
+  x: 0
+  y: -6
+  reload: 150
+  rotate: true
+  rotateSpeed: 99999
+  mirror: false
+  ejectEffect: instBomb
+  shoot:{
+    type: zapBulletType
+  }
+
+  bullet: standardHoming
+  bullet: {
+    shootEffect: instBomb
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+    damage: 0
+    spawnUnit: unity-kiros-mini-blackHole
+  }
+}]
+abilitys: [
+{
+type: SuppressionFieldAbility
+    orbRadius: 70
+    colorFrom: ff3300FF
+    colorTo: ff000055
+}]
+outlineColor: 00000000

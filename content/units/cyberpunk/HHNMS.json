@@ -1,0 +1,81 @@
+{
+         "type": "flying",
+	"speed": 5,
+	"rotate": true,
+	"name": "HHNMS(heavy hyper nova missile)",
+	"outlineColor": "777778",
+	"hitSize": 30,
+	"health": 500,
+	"dammage": 200,
+	"size": 30,
+	"canDrown": "false",
+        "mineSpeed": 0,
+        "buiThisldSpeed": 1,
+        "buildSpeed": 0,
+	"canBuild": false,
+        "mineTier": 0,
+        "itemCapacity": 20,
+	"armor": 50,
+        "canBoost": false,
+        "hovering": true,
+        "flying": true,
+   "lowAltitude": true
+        "ground": true,
+        "shadowElevation": 1,
+        "useEngineElevation": true,
+	"targetAir": true,
+        "engines": [
+    {
+      "x": 0,
+      "y": -30,
+      "rotation": 270,
+      "radius": 5
+    }
+  ],
+	"rotateSpeed": 10,
+	"faceTarget": true,
+    "parts": [
+        ],
+	"immunities": [
+        "lowHeight",
+	],
+	"weapons": [
+    {
+      "name": "HHNMS-gun",
+      "x": 0
+  "y": 28,
+  "reload": 85,
+  "mirror": "false",
+  "rotate": "true",
+  "ejectEffect": "none",
+  "range": 200,
+  "shoot":{
+    "type": "basisBulletType"
+  }
+
+  "bullet": "standardHoming",
+  "bullet": {
+    "shootEffect": [
+           {
+              "type": "WaveEffect",
+              "lifetime": 200,
+              "sizeFrom": 0,
+              "sizeTo": 200,
+              "interp": "pow10Out",
+              "strokeFrom": 40,
+              "strokeTo": 0,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626"
+            }
+],
+    "smokeEffect": "shootBigSmoke",
+    "instantDisappear": "true",
+    "damage": 0,
+    "spawnUnit": "unity-kiros-icbm"
+ }
+}
+    ]
+    "abilities": [
+        ]
+"description": "total heavy missile.",
+}

@@ -1,0 +1,106 @@
+{
+         "type": "flying",
+	"speed": 0.8,
+	"rotate": true,
+	"name": "AMTUNTER",
+	"outlineColor": "77777800",
+	"hitSize": 100,
+	"health": 50000,
+	"dammage": 200,
+	"size": 100,
+	"canDrown": "false",
+        "mineSpeed": 0,
+        "buiThisldSpeed": 1,
+        "buildSpeed": 0,
+	"canBuild": false,
+        "mineTier": 0,
+        "itemCapacity": 500,
+	"armor": 0,
+        "canBoost": false,
+        "hovering": false,
+        "flying": true,
+   "lowAltitude": false,
+        "ground": false,
+        "shadowElevation": 12,
+        "useEngineElevation": true,
+	"targetAir": true,
+        "enginesSize":10,
+        "engineOffset":50,
+	"rotateSpeed": 1,
+	"faceTarget": true,
+    "parts": [
+        ],
+	"immunities": [
+        "freezing",
+	],
+	"weapons": [
+    {
+      name: orbital-weapon-null
+  x:0
+  y: 0
+  firstShootDelay:20
+  mirror: false
+  top: false
+  shake: 20
+  shootY: 0
+  reload: 300
+  recoil: 0
+  chargeSound: lasercharge2
+  shootSound: beam
+  continuous: true
+  cooldownTime: 200
+  bullet: {
+    type: ContinuousLaserBulletType
+    status: high-energy-burn
+    statusDuration: 100
+    damage: 3000
+    length: 2000
+    hitEffect: hitMeltHeal
+    drawSize: 300
+    lifetime: 200
+    shake: 10
+    despawnEffect: smokeCloud
+    smokeEffect: none
+    incendChance: 0.15
+    incendSpread: 5
+    incendAmount: 1
+    healPercent: 10000
+    collidesTeam: true
+    colors: [
+      ff2222, ff4444, ff8888, ffffff
+    ]
+    status: slow
+    statusDuration: 120
+  }
+}
+        ]
+abilities: [
+    {
+    "type": "SuppressionFieldAbility",
+    "orbRadius": 30,
+    "colorFrom": "a93e3e55",
+    "colorTo": "a93e3e44",    
+    "color": ff3522,
+    "range":200
+    },
+{
+	    "type": "EnergyFieldAbility",
+	    "maxTargets": 10,
+	    "range": 200,
+	     "colorFrom": "990000FF",
+             "colorTo": "bb0000FF",
+	     "damage": 1,
+	     "reload": 10,
+        "color": ff3522
+},
+{
+"type": "ForceFieldAbility",
+"max": 10000,
+"radius": 200,
+"color": ff3522,
+"regen":5,
+"cooldown":100
+}
+]
+"description": "a ship that destroy everything.",
+}

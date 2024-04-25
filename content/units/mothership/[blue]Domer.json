@@ -1,0 +1,235 @@
+{
+         "type": "flying",
+	"speed": 0,
+	"rotate": true,
+	"name": "The [blue]Domer",
+	"outlineColor": "41445500",
+	"hitSize": 250,
+	"health": 23000,
+	"dammage": 200,
+	"size": 150,
+	"canDrown": "false",
+        "mineSpeed": 6000,
+        "buiThisldSpeed": 1,
+        "buildSpeed": 9999,
+	"canBuild": true,
+        "mineTier": 1000,
+        "itemCapacity": 5000,
+	"armor": 50000,
+        "canBoost": false,
+        "hovering": false,
+        "flying": false,
+        "ground": true,
+        "shadowElevation": 0,
+        "useEngineElevation": false,
+	"targetAir": true,
+        "engineSize": 30,
+        "engineOffset": 0,
+        "trailColor": "a93e3eFF",
+        "trailLength": 100,
+        "engineColor": "a93e3eFF",
+	"rotateSpeed": 1,
+	"faceTarget": true,
+    "parts": [
+        ],
+	"immunities": [
+        "freezing",
+	],
+	"weapons": [
+	    {
+"name": "},
+    {
+      "name": "cerberian-laser-annihilator",
+      "shootStatus": "unmoving",
+      "shootStatusDuration": 450,
+      "x": 0,
+      "y": -15,
+      "shake": 50,
+      "reload": 720,
+      "shoot": {
+        "firstShotDelay": 50
+      },
+      "rotate": false,
+      "mirror": false,
+      "continuous": true,
+      "chargeSound": "lasercharge2",
+      "shootSound": "laserbig",
+      "bullet": {
+        "type": "ContinuousLaserBulletType", 
+        "width": 43,
+        "status": "unity-kiros-high-energy-burn"
+        "statusDuration": 80
+        "status": "unity-kiros-radiated"
+        "statusDuration": 200
+        "length": 15000,
+        "damage": 8000,
+        "shake": 20,
+        "damageInterval": 15,
+        "lifetime": 250,
+        "fadeTime": 90,
+        "hittable": false,
+        "absorbable": true,
+        "laserAbsorb": true,
+        "colors": ["a93e3e", "6f2626", "b34343", "932a2a", "ffffff"],
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 20,
+              "sizeTo": 2,
+              "colorFrom": "ffffff",
+              "colorTo": "ffffff",
+              "length": 75,
+              "baseLength": 0,
+              "lifetime": 120,
+              "particles": 50,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 10,
+              "sizeTo": 2,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626",
+              "length": 95,
+              "baseLength": 0,
+              "lifetime": 120,
+              "particles": 100,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            }
+          ]
+        }
+        "chargeEffect": {
+          //This effect is inspired by Tweu2 (Reference file: collapse.json)
+          "type": "MultiEffect",
+          "lifetime": 90,
+          "followParent": true,
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "lifetime": 200,
+              "sizeFrom": -900,
+              "sizeTo": 1000,
+              "interp": "pow10Out",
+              "strokeFrom": 40,
+              "strokeTo": 0,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626"
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 170,
+              "sizeTo": 0,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626",
+              "length": 200,
+              "baseLength": -80,
+              "lifetime": 120,
+              "particles": 100,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 120,
+              "sizeTo": 0,
+              "colorFrom": "ff0000ff",
+              "colorTo": "ff000055",
+              "length": 1000,
+              "baseLength": -110,
+              "lifetime": 200,
+              "particles": 120,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 100,
+              "sizeTo": 0.5,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626",
+              "length": 1000,
+              "baseLength": 0,
+              "lifetime": 120,
+              "particles": 500,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 100,
+              "sizeTo": 5,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626",
+              "length": -410,
+              "baseLength": 0,
+              "lifetime": 120,
+              "particles": 200,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 120,
+              "sizeTo": 2,
+              "colorFrom": "a93e3e",
+              "colorTo": "ff0000",
+              "length": -500,
+              "baseLength": 0,
+              "lifetime": 150,
+              "particles": 250,
+              "interp": "exp5",
+              "sizeInterp": "pow3Out"
+            }
+          ]
+        }
+        //Tweu2's inspired particle magic ends here!
+      }
+    }
+    ]
+    "abilities": [
+    {    
+    "type": "SuppressionFieldAbility",
+    "orbRadius": 160,
+    "colorFrom": "a93e3e55",
+    "colorTo": "a93e3e44",    
+    "color": a93e3e44
+    },
+    {
+    "type": "SuppressionFieldAbility",
+    "orbRadius": 135,
+    "colorFrom": "a93e3e55",
+    "colorTo": "a93e3e44",    
+    "color": fbefef50
+    },
+    {
+    "type": "SuppressionFieldAbility",
+    "orbRadius": 80,
+    "colorFrom": "a93e3e55",
+    "colorTo": "a93e3e44",    
+    "color": ffffff50
+    },
+	    {
+	    "type": "EnergyFieldAbility",
+	    "maxTargets": 100,
+	    "range": 200,
+	     "colorFrom": "990000FF",
+             "colorTo": "bb0000FF",
+	     "color": "9900BBFF",
+	     "damage": 200,
+	     "reload": 10,
+        "color": a93e3e
+	    },
+    {
+    "type": "ForceFieldAbility",
+    "radius":300,
+    "regen":10,
+      "max": 9000,
+      "cooldown": 600
+    }
+        ]
+"description": "[white]The most [blue]powerful[] and [yellow]strongest []of all the storm units. If you wish to live place indium walls and an extremely powerful defence. It destroys everything it goes over as well as barages with hyperLaser.",
+}

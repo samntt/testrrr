@@ -1,0 +1,70 @@
+type: ItemTurret
+health: 3600
+range: 2000
+size: 4
+ammoTypes: {
+explosion-ammo: {
+    type: ZapBulletType
+    shots: 10
+    shotDelay: 2
+    shootEffect: instShoot
+    hitEffect: instBomb
+    smokeEffect: smokeCloud
+    trailEffect: instTrail
+    despawnEffect: instHit
+    trailSpacing: 10
+    damage: 5000
+    buildingDamageMultiplier: 1.5
+    speed: 10
+    ammoMultiplier: 15
+    Color:ffff55
+    lifetime:2000
+    width: 15
+    height: 20
+    itemCapacity:20
+    }
+normal-ammo: {
+    type: ZapBulletType
+    shots: 5
+    shotDelay: 4
+    shootEffect: instShoot
+    hitEffect: instBomb
+    smokeEffect: smokeCloud
+    trailEffect: instTrail
+    despawnEffect: instHit
+    trailSpacing: 20
+    damage: 2000
+    buildingDamageMultiplier: 0.8
+    speed: 8
+    ammoMultiplier: 10
+    Color:ffbb44
+    lifetime:2000
+    width: 10
+    height: 25
+}
+  }
+rotateSpeed: 5
+reload: 250
+recoil: 2
+shootCone: 0.3
+ammoPerShot: 10
+shootSound: laser
+category: turret
+research: foreshadow
+coolantMultiplier: 0.5
+consumes: {
+  power: 100
+  coolant: {
+  type: consumeCoolant
+    amount: 200
+}
+}
+requirements: [
+thorium/425
+coal/500
+surge-alloy/800
+silicon/1050
+titanium/1000
+]
+researchCostMultiplier: 2
+outlineColor: 303a45

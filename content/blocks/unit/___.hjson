@@ -1,0 +1,31 @@
+type: UnitFactory
+health: 2500
+size: 4
+plans: [
+  {
+  unit: toxopid
+  requirements: [
+    silicon/350
+    coal/75
+  ]
+  time: 1500
+  }
+  {
+  unit: alphaBeam
+  requirements: [
+    silicon/325
+    coal/75
+    surge-alloy/500
+  ]
+  time: 2400
+  }
+]
+consumes: {
+power: 10
+}
+category: units
+
+researchCostMultiplier: 2.5
+requirements: [
+  silicon/625
+]

@@ -1,0 +1,105 @@
+type: missile
+health: 50000000
+hitSize: 30
+template: MissileUnitType
+speed: 0.05
+physics: true
+engineSize:5
+engineOffset:0.5
+flying: true
+useUnitCap: false
+lifetime: 2000
+rotateSpeed:0
+
+trailLength: 200
+circleTarget: true
+trailColor: ff2222ff
+aimDst: 4
+drawCell: false
+outlines: true
+range: 1000
+hidden: false  
+weapons: [
+{
+name:WTFF
+killShooter: false
+shootOnDeath: false
+  x: 0
+  y: 0
+  mirror: false
+  top: false
+  shake: 4
+  rotate: true
+  shootY: 8
+  reload: 0
+  recoil: 0
+  chargeSound: lasercharge2
+  shootSound: beam
+  continuous: true
+  cooldownTime: 0
+  bullet: {
+    type: ContinuousLaserBulletType
+    damage: 450
+    length: 100
+    hitEffect: hitMeltHeal
+    drawSize: 150
+    lifetime: 50
+    shake: 1
+    despawnEffect: smokeCloud
+    smokeEffect: none
+    incendChance: 0.15
+    incendSpread: 5
+    incendAmount: 1
+    healPercent: 2
+    collidesTeam: true
+    colors: [
+      ff2222, ff4444, ff8888, ffffff
+    ]
+    status: slow
+    statusDuration: 120
+    }
+  }
+{
+name:infi
+reload: 1
+    shootOnDeath: true
+    mirror: true
+    range:0
+    shootCone: 360
+    shootSound: "portalclose"
+    bullet: {
+      type: ExplosionBulletType
+      despawnShake: 10
+      hitShake: 10
+      splashDamage: 2000000
+      splashDamageRadius: 50
+    }
+  }]
+parts: [
+{
+   type: regionPart
+   suffix: -hand
+   mirror: false
+   progress: warmup
+   layerOffset: -0.001
+   x: 0
+   moveX: 999999999
+   y: 0
+   moveSize: 1000000
+   moveRot: 999999
+}]
+abilities: [
+        {
+        type: mindustry.entities.abilities.EnergyFieldAbility
+        colorFrom: ffbb00ff
+        colorTo: ff000055
+        range: 70
+        amount: 60
+        heal: 100
+        reload: 0.2
+        damage: 50
+        size: 100
+        color: ff0000
+        }
+]
+outlineColor: 303a4500

@@ -1,0 +1,250 @@
+type: flying
+description: "it super op(it v2 of luna eclipse)"
+health: 10000
+speed: 1.5
+Size: 55
+hitSize: 55
+engineOffset: 21
+engine2Offset: 25
+engineSize: 8
+engien2Size:6
+rotateSpeed: 2
+buildSpeed: 1
+drag: 0.06
+accel: 0.12
+immunities: [
+		burning
+      slow
+      freezing
+      blasted
+      unmoving
+      wet
+      melting
+		]
+weapons: [
+{
+  name: Gorgoncannon
+  x: 0
+  y: 7
+  mirror: false
+  top: false
+  shake: 4
+  shootY: 5
+  fadeTime:50
+  firstShotDelay:50
+  reload: 0
+  range:600
+  recoil: 0
+  chargeSound: aLaser
+  shootSound: beam
+  continuous: true
+  cooldownTime: 0
+  chargeTime: 100
+  bullet: {
+    type: ContinuousLaserBulletType
+    damage: 300
+    length: 600
+    speed: 0
+    hitEffect: hitMeltHeal
+    drawSize: 150
+    lifetime: 30
+    shake: 5
+    despawnEffect: none
+    smokeEffect: none
+    incendChance: 3
+    incendSpread: 5
+    incendAmount: 1
+    healPercent: 10
+    collidesTeam: true
+    colors: [
+      22bb22, 44bb44, 88bb88, ffffff
+    ]
+    status: slow
+    statusDuration: 120
+  }
+ }
+{
+name: flamer
+  mirror: true
+  top: true
+  x: 25
+  y: 5
+  reload: 5
+  shootStatus: shielded
+  shootStatusDuration: 80
+  recoil: 0.5
+  rotate: true
+  ejectEffect: none
+  velocityRnd: 0.2
+  range:170
+  shootCone: 20
+	bullet: {
+    type: BasicBulletType
+    collidesAir: true
+    speed: 15
+    damage: 65
+    width: 0.5
+    height: 0.5
+    shootEffect: {
+    type: ParticleEffect
+    particles: 30
+    sizeFrom: 15
+    sizeTo: 0
+    length: 200
+    lifetime: 25
+    interp: circleOut
+    lightColor: ffff33
+    colorFrom: ff0000
+    colorTo: ffff1166
+    cone: 10
+    }
+    smokeEffect: none
+    lifetime: 12,
+	despawnEffect: instBomb
+    hittable: true
+    reflectable: false
+	hitEffect: {
+  type: ParticleEffect
+    line: true
+    particles: 5
+    lifetime: 60
+    interp: circleOut
+    length: 100
+    cone: -30
+    lenFrom: 5
+    lenTo: 0
+    colorFrom: bbbb1155
+    colorTo: 77770234
+	}
+	pierce: true
+	incendAmount: 5
+     }
+  shootSound: artillery
+}
+{
+name: Behomothgun
+  x: 0
+  y: -6
+  reload: 1000
+  mirror: false
+  ejectEffect: none
+  range:100
+  shoot:{
+    type: zapBulletType
+  }
+
+  bullet: standardHoming
+  bullet: {
+    shootEffect: instShoot
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+    damage: 0
+    spawnUnit: unity-kiros-bulletCapsoon
+  }
+}]
+parts: [
+{
+   type: RegionPart
+   suffix: -hand
+   mirror: true
+   progress: warmup
+   layerOffset: -0.001
+   x: 9
+   y: 25
+   moveX: 13
+   moveY: 2
+   moveRot: -30
+}
+{
+   type: RegionPart
+   suffix: -hand
+   mirror: true
+   progress: warmup
+   layerOffset: -0.001
+   x: 25
+   y: -8
+   moveX: 10
+   moveY: 5
+   moveRot: 40
+}
+{
+   type: RegionPart
+   suffix: -hand
+   mirror: true
+   progress: warmup
+   layerOffset: -0.001
+   x: 20
+   y: 2
+   moveX: 10
+   moveY: 5
+   moveRot: 40
+}
+]
+      abilities: [
+        {
+        type: mindustry.entities.abilities.EnergyFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 2
+        strokeTo: 0
+        lightColor: 88ff88
+        colorFrom: 22ff22
+        colorTo: 99ff99
+        }
+        range: 200
+        amount: 60
+        heal: 100
+        reload: 42
+        damage: 10
+        size: 20
+        Color: 77ff77
+        }
+        {
+        type: mindustry.entities.abilities.RepairFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 50
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 5
+        strokeTo: 0
+        lightColor: 22ff22
+        colorFrom: 55ff5544
+        colorTo: 88ff88ff
+        }
+        range: 40
+        amount: 100
+        reload: 40
+        Color: 66ff66
+        }
+        {
+        type: mindustry.entities.abilities.ForceFieldAbility
+        range:200
+        health:1000000
+        size:200
+        colorFrom: ffbb00ff
+        colorTo: ff000055
+        color: ff0000
+        cooldown: 20
+        }
+        {
+type: SuppressionFieldAbility
+    orbRadius:75
+    colorFrom: 9900bbFF
+    colorTo: bb00dd44
+        }   
+        ]
+research: {
+  parent: LunaEclipse
+  requirements: [
+    titanium/19800
+    silicon/39600
+    plastanium/96500
+    surge-alloy/60000
+    coal/3000
+    copper/800000
+]}
+outlineColor: bbbbbb11

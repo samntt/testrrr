@@ -1,0 +1,96 @@
+type: missile
+health: 1100
+hitSize: 3
+template: MissileUnitType
+speed: 5
+engineSize: 1
+engineOffset: 3
+physics: false
+flying: true
+useUnitCap: false
+lifetime: 500
+rotateSpeed: 0
+
+trailLength: 10
+autoFindTarget: false
+homingDelay: 10
+circleTarget: false
+faceTarget: true
+trailColor: ffbb77
+aimDst: 4
+drawCell: false
+outlines: true
+range: 4
+hidden: true  
+weapons: [
+  {
+    reload: 1
+    shootOnDeath: true
+    mirror: true
+    shootCone: 360
+    "bullet": {
+      "type": "ExplosionBulletType",
+      "despawnShake": 1,
+      "hitShake": 1,
+      "splashDamage": 50,
+      "splashDamageRadius": 20,
+      "fragBullets": 10,
+        "fragBullet": {
+          "hitShake": 3,
+          "type": "ArtilleryBulletType",
+          "hitEffect": "hitMeltdown",
+          "hitSound": "explosion",
+          "sprite": "unity-kiros-lycosid-bullet",
+          "frontColor": "a93e3e",
+          "backColor": "6f2626",
+          "width": 15,
+          "height": 15,
+          "spin": 20,
+          "speed": 1,
+          "lifetime": 80,
+          "damage": 50,
+          "lightning": 3,
+          "lightningLength": 9,
+          "lightningDamage": 12,
+          "fragBullets": 5,
+          "fragBullet": {
+            "hitShake": 3,
+            "type": "BombBulletType",
+            "splashDamageRadius": 70,
+            "sprite": "unity-kiros-blackHole",
+            "hitSound": "explosion",
+            "width": 12,
+            "height": 12,
+            "hitEffect": {
+              "type": "WaveEffect",
+              "sizeFrom": 35,
+              "sizeTo": -100,
+              "colorFrom": "a93e3e",
+              "colorTo": "6f2626"
+            },
+            "splashDamage": 30,
+            "speed": 0.5,
+            "lifetime": 100,
+            "fragBullets": 2,
+            "fragBullet": {
+              "hitShake": 1,
+              "type": "MissileBulletType",
+              "speed": 1.5,
+              "lifetime": 100,
+              "height": 16,
+              "width": 10,
+              "damage": 2,
+              "homingPower": 0.09,
+              "homingRange": 160,
+              "homingDelay": 60,
+              "hitEffect": "blastExplosion",
+              "lightning": 10, 
+              "lightningLength": 5,
+              "lightningDamage": 10
+            }
+          }
+        }
+    }
+  } 
+]
+outlineColor: 00000000

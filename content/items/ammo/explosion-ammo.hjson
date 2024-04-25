@@ -1,0 +1,6 @@
+color: ff5555
+name: normal ammo
+cost: 10
+flammability: 30
+explosiveness: 500
+charge: 100

@@ -1,0 +1,20 @@
+type: Wall
+health: 9000
+size: 2
+research: surge-wall
+laserAbsorb: true
+category: defense
+abilities: [
+   {
+    type: ForceFieldAbility
+    orbRadius: 50
+    radius: 50
+    forceHealth: 10000
+    shieldHealth: 10000
+    color: ff0000
+    cooldown: 30
+    }
+]
+requirements:[
+    solar iron Alloy/1000
+]

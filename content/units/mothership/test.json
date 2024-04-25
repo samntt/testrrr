@@ -1,0 +1,266 @@
+{
+         "type": "flying",
+	"speed": 1,
+	"rotate": true,
+	"name": "hyper nova",
+	"outlineColor": "777778",
+	"hitSize": 100,
+	"health": 23000,
+	"dammage": 200,
+	"size": 100,
+	"canDrown": "false",
+        "mineSpeed": 0,
+        "buiThisldSpeed": 1,
+        "buildSpeed": 0,
+	"canBuild": false,
+        "mineTier": 0,
+        "itemCapacity": 50,
+	"armor": 50,
+        "canBoost": false,
+        "hovering": true,
+        "flying": true,
+   "lowAltitude": true
+        "ground": true,
+        "shadowElevation": 2,
+        "useEngineElevation": true,
+	"targetAir": true,
+        "engines": [
+    {
+      "x": 0,
+      "y": -70,
+      "rotation": 270,
+      "radius": 6
+    },
+    {
+      "x": 20,
+      "y": -60,
+      "rotation": 270,
+      "radius": 3
+    },
+    {
+      "x": -20,
+      "y": -60,
+      "rotation": 270,
+      "radius": 3
+    },
+    {
+      "x": -10,
+      "y": -53,
+      "rotation": 270,
+      "radius": 2
+    },
+    {
+      "x": 10,
+      "y": -53,
+      "rotation": 270,
+      "radius": 2
+    }
+  ],
+	"rotateSpeed": 1,
+	"faceTarget": true,
+    "parts": [
+        ],
+	"immunities": [
+        "freezing",
+	],
+	"weapons": [
+    {
+      "name": "lol1458",
+      "x": 0
+  "y": 0,
+  "reload": 80,
+  "mirror": "false",
+  "ejectEffect": "none",
+  "range": 100,
+  "shoot":{
+    "type": "basisBulletType"
+  }
+
+  "bullet": "standardHoming",
+  "bullet": {
+    "shootEffect": "instShoot",
+    "smokeEffect": "shootBigSmoke",
+    "instantDisappear": "true",
+    "damage": 0,
+    "spawnUnit": "unity-kiros-one"
+ }
+},
+{
+"name": "deathRay",
+   "reload": 400,
+   "cooldown": 300,
+   "heatColor": "ff8800"
+      "x": 15,
+      "y": -10,
+      "shake": 20,
+      "recoil": 9,
+      "alternate": true,
+      "shootSound": "largeCannon",
+      "mirror": true,
+      "rotate": true,
+      "top": true,
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "unity-kiros-lycosid-bullet",
+        "frontColor": "ffbb00",
+        "hitSound": "explosion",
+        "hitShake": 10,
+        "hitEffect": "instBomb",
+        "backColor": "997700",
+        "width": 35,
+        "height": -50,
+        "speed": 1.2,
+        "lifetime": 250,
+        "scaleLife": true,
+        "damage": 100,
+        "spin": 0,
+        "pierce": true,
+        "pierceBuilding": true,
+        "buildingDamageMultiplier": 0.95,
+        "fragBullets": 5,
+        "fragBullet": {
+        "type": "BasisBulletType",
+        "sprite": "unity-kiros-lycosid-bullet",
+        "frontColor": "ffbb00",
+        "backColor": "997700",
+        "hitSound": "explosion",
+        "hitEffect": "instShoot",
+        "width": 30,
+        "hitShake": 30,
+        "height": 30,
+        "speed": 1,
+        "lifetime": 100,
+        "scaleLife": true,
+        "damage":10,
+        "spin": 150,
+        "pierce": true,
+        "pierceBuilding": false,
+        "fragBullets": 30,
+        "fragSpread": 20,
+        "fragRandomSpread": 0,
+        "fragBullet": {
+          "type": "ShrapnelBulletType",
+          "hitSound": "explosion",
+          "despawnHit": true,
+          "fromColor": "ffbb00",
+          "toColor": "ff660055",
+          "length": 50,
+          "damage": 20,
+          "lifetime": 90,
+          "hitLarge": true,
+          "width": 16
+}
+}
+}
+},
+{
+"name": "killer",
+   "reload": 100,
+   "cooldown": 100,
+   "heatColor": "ff8800"
+      "x": 10,
+      "y": 85,
+      "shake": 10,
+      "recoil": 3,
+      "alternate": true,
+      "shootSound": "largeCannon",
+      "mirror": true,
+      "rotate": true,
+      "top": true,
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "unity-kiros-solar-bullet",
+        "frontColor": "ff0000",
+        "hitSound": "explosion",
+        "hitShake": 20,
+        "hitEffect": "instBomb",
+        "backColor": "770000",
+        "width": 50,
+        "height": 50,
+        "speed": 1.2,
+        "lifetime": 350,
+        "scaleLife": true,
+        "damage": 50,
+        "spin": 0,
+        "pierce": true,
+        "pierceBuilding": true,
+        "buildingDamageMultiplier": 0.95,
+        "fragBullets": 30,
+        "fragSpread": 50,
+        "fragRandomSpread": 10,
+        "fragBullet": {
+          "type": "ShrapnelBulletType",
+          "hitSound": "explosion",
+          "despawnHit": true,
+          "fromColor": "ff0000",
+          "toColor": "55000055",
+          "length": 20,
+          "damage": 10,
+          "lifetime": 90,
+          "hitLarge": true,
+          "width": 7
+}
+}
+}
+    ]
+    "abilities": [
+{
+      "type": "UnitSpawnAbility",
+      "unit": "HHNMS",
+      "spawnX": 0,
+      "spawnY": -16,
+      "spawnTime": 800
+},
+{
+      "type": "UnitSpawnAbility",
+      "unit": "HHEALMS",
+      "spawnX": 20,
+      "spawnY": 0,
+      "spawnTime": 1300
+},
+{
+      "type": "UnitSpawnAbility",
+      "unit": "HHEALMS",
+      "spawnX": -20,
+      "spawnY": 0,
+      "spawnTime": 1300
+},
+      {
+	    "type": "EnergyFieldAbility",
+	    "maxTargets": 3,
+	    "range": 200,
+	     "colorFrom": "990000FF",
+             "colorTo": "bb0000FF",
+	     "color": "ff4400FF",
+	     "damage": 20,
+	     "reload": 50,
+        "color": a93e3e
+        "sectors":3,
+        "x":16,
+        "y":36.2,
+        "status": "unity-kiros-high-energy-burn",
+        "statusDuration": 200,
+        "status": "unity-kiros-lowHeight",
+        "statusDuration": 150
+	    },
+       {
+	    "type": "EnergyFieldAbility",
+	    "maxTargets": 2,
+	    "range": 200,
+	     "colorFrom": "990000FF",
+             "colorTo": "bb0000FF",
+	     "color": "ff4400FF",
+	     "damage": 20,
+	     "reload": 50,
+        "color": a93e3e,
+        "sectors":3,
+        "x":-16,
+        "y":36.2,
+        "status": "unity-kiros-high-energy-burn"
+        "statusDuration": 200,
+        "status": "unity-kiros-lowHeight",
+        "statusDuration": 150
+	    }
+        ]
+"description": "total BIGEST unit.",
+}

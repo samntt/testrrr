@@ -1,0 +1,111 @@
+type: flying
+health: 7000
+range: 600
+speed: 1.5
+Size: 55
+hitSize: 55
+engineOffset: 21
+engine2Offset: 25
+engineSize: 8
+engien2Size:6
+flying: true
+rotateSpeed: 2
+buildSpeed: 1
+drag: 0.06
+accel: 0.12
+immunities: [
+		burning
+      slow
+      freezing
+		]
+weapons: [
+{
+  name: Gorgoncannon
+  x: 0
+  y: 7
+  mirror: false
+  top: false
+  shake: 4
+  shootY: 8
+  reload: 0
+  recoil: 0
+  chargeSound: lasercharge2
+  shootSound:beam
+  continuous: true
+  cooldownTime: 0
+  chargeTime: 100
+  bullet: {
+    type: ContinuousLaserBulletType
+    damage: 300
+    length: 600
+    speed: 5
+    hitEffect: hitMeltHeal
+    drawSize: 150
+    lifetime: 100
+    shake: 5
+    despawnEffect: smokeCloud
+    smokeEffect: none
+    incendChance: 3
+    incendSpread: 5
+    incendAmount: 1
+    healPercent: 10
+    collidesTeam: true
+    colors: [
+      22bb22, 44bb44, 88bb88, ffffff
+    ]
+    status: slow
+    statusDuration: 120
+  }
+ }]
+      abilities: [
+        {
+        type: mindustry.entities.abilities.EnergyFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 2
+        strokeTo: 0
+        lightColor: 88ff88
+        colorFrom: 22ff22
+        colorTo: 99ff99
+        }
+        range: 200
+        amount: 60
+        heal: 100
+        reload: 42
+        damage: 10
+        size: 20
+        Color: 77ff77
+        }
+        {
+        type: mindustry.entities.abilities.RepairFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 50
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 5
+        strokeTo: 0
+        lightColor: 22ff22
+        colorFrom: 55ff5544
+        colorTo: 88ff88ff
+        }
+        range: 40
+        amount: 100
+        reload: 40
+        Color: 66ff66
+        }
+        ]
+research: {
+  parent: eclipse
+  requirements: [
+    titanium/15800
+    silicon/19600
+    plastanium/16500
+    surge-alloy/10000
+    coal/1000
+    copper/100000
+]}
+outlineColor: bbbbbb11

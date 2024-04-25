@@ -1,0 +1,36 @@
+{
+  "name": "[#bbbbbb]lowHeight",
+  "speedMultiplier": 0.5,
+  "alwaysUnlocked": true,
+  "engineSize":-1,
+  "damage":10
+  "reloadMultiplier":0.7
+           "effect": [
+           {
+              "type": "ParticleEffect",
+              "sizeFrom": 15,
+              "sizeTo": 2,
+              "colorFrom": "88888866",
+              "colorTo": "55555522",
+              "length": 200,
+              "baseLength": 0,
+              "lifetime": 120,
+              "particles": 5,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            },
+            {
+              "type": "ParticleEffect",
+              "sizeFrom": 10,
+              "sizeTo": 2,
+              "colorFrom": "55555566",
+              "colorTo": "33333322",
+              "length": 80,
+              "baseLength": 0,
+              "lifetime": 120,
+              "particles": 8,
+              "interp": "exp5",
+              "sizeInterp": "pow5Out"
+            }
+      ]
+}

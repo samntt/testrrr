@@ -1,0 +1,144 @@
+type: flying
+health: 9e999
+range: 50
+speed: 3
+flying: true
+hitSize: 8
+engineOffset: 8
+engineSize: 4
+rotateSpeed: 5
+mineSpeed: 10
+buildSpeed: 5
+mineTier: 10
+drag: 0.06
+accel: 0.12
+defaultController: minerAI
+        mineItems: [
+        copper
+        lead
+        titanium
+        ]
+targetGround: true
+targetAir: true
+weapons:[
+{
+name: claws
+  x: 10
+  y: -5
+  shootY: 6
+  reload: 20
+  ejectEffect: none
+  shootSound: laser
+  rotate: true
+  mirror: true
+  bullet: {
+    type: SapBulletType
+    sapStrength: 0.4
+    length: 110
+    damage: 20
+    shootEffect: shootSmall
+    hitColor: D6FF33
+    color: FFE70F
+    despawnEffect: none
+    width: 0.7
+    lifetime: 20
+    knockback: 5
+  }
+}
+{
+name: cannon_115544
+  x: 0
+  y: -10
+  reload: 45
+  mirror: false
+  shootCone: 100
+  shake: 0
+  inaccuracy: 2
+  ejectEffect: none
+  bullet: {
+    type: BasicBulletType
+    speed: 4
+    damage: 20
+    sprite: unity-kiros-lycosid-bullet
+    hitEffect: blastExplosion
+    knockback: 1
+    lifetime: 53
+    width: 14
+    height: 14
+    collides: true
+    collidesTiles: true
+    splashDamageRadius: 20
+    splashDamage: 30
+    backColor: 8B73C7
+    frontColor: 8B73C7
+  }
+}
+{
+name: Gorgoncannon
+   x: 0
+   y: 2
+   mirror: false
+   rotate: false
+   top: false
+   shake: 4
+   shootY: 8
+   reload: 160
+   recoil: 50
+   chargeSound: lasercharge2
+   shootSound: beam
+   continuous: true
+   cooldownTime: 250
+   bullet: {
+    type: ContinuousLaserBulletType
+    damage: 30
+    length: 500
+    hitEffect: hitMeltHeal
+    drawSize: 125
+    lifetime: 125
+    shake: 1
+    despawnEffect: smokeCloud
+    smokeEffect: none
+    incendChance: 0.5
+    incendSpread: 5
+    incendAmount: 1
+    healPercent: 5
+    collidesTeam: true
+    colors: [
+      ff6666, bb4455, 993322, ffffff
+    ]
+    status: slow
+    statusDuration: 120
+}}
+]
+abilities: [
+        {
+        type: mindustry.entities.abilities.RepairFieldAbility
+        healEffect: {
+        type: WaveEffect
+        lifetime: 50
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 5
+        strokeTo: 0
+        lightColor: 73FFAEFF
+        colorFrom: 73FFAEFF
+        colorTo: 57D993FF
+        }
+        range: 40
+        amount: 5
+        reload: 70
+            }
+  {
+  type: LiquidExplodeAbility
+  liquid: neoplasm
+  amount: 1250
+  }
+    ]
+outlineColor: 303a45
+research: {
+  parent: sporepod-Synapse-tower
+  objectives: [
+    mono
+  ]
+}
+itemCapacity: 1500
